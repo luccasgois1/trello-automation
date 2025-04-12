@@ -2,13 +2,6 @@
 
 set -e
 
-# Create env file insight container
-echo "
-TRELLO_KEY=$TRELLO_KEY
-TRELLO_TOKEN=$TRELLO_TOKEN
-POSTMAN_KEY=$POSTMAN_KEY
-" > /tests/.env
-
 # Download collection
 /tests/download_collection.sh
 
